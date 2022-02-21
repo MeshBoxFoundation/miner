@@ -30,7 +30,7 @@ all: clean build
 
 .PHONY: build
 build:
-	$(GOBUILD) -ldflags "$(PackageFlags)" -o ./bin/$(BUILD_TARGET_SERVER) -v ./cmd/miner.go
+	$(GOBUILD) -ldflags "$(PackageFlags)" -o ./bin/$(BUILD_TARGET_SERVER) -v ./miner
 
 .PHONY: clean
 clean:
